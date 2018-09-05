@@ -19,7 +19,7 @@ public class Motoristas {
     public static void main(String[] args) {
         Scanner mot = new Scanner(System.in);
    
-        int km=0, litro=0, i = 1;
+        int km=0, litro=0, i = 0;
         double TotalKm = 0, TotalL = 0;
         while( km > -1 && litro > -1){
             System.out.println("Quantos quilomentrs    SAIR(-1)");
@@ -29,14 +29,14 @@ public class Motoristas {
 
             if(km > -1 && litro>-1 ){
                 double media = km/litro; // tanque cabe 10 litros   
-                System.out.println(i++ + ") Gastou: " + media + " litros por quilometro rodado");
+                System.out.println(++i + ") Gastou: " + media + " litros por quilometro rodado");
                 TotalKm += km;
                 TotalL += litro;
             }
         }
-        System.out.println("Quilometros gastos dos " + (i-1) + "carros: " + TotalKm + "km");
-        System.out.println("Combustivel gastos dos " + (i-1) + "carros: " + TotalL + "L");
-        System.out.println("Gastos dos " + (i-1) + "carros: " + (double)TotalKm/TotalL + "km/L");
+        System.out.println("Quilometros gastos dos " + i + "carros: " + TotalKm + "km");
+        System.out.println("Combustivel gastos dos " + i + "carros: " + TotalL + "L");
+        System.out.println("Gastos dos " + i + "carros: " + (double)TotalKm/TotalL + "km/L");
             
         
     }
