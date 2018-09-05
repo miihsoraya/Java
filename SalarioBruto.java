@@ -34,10 +34,8 @@ public class AtvJava {
             } 
             
         }
-        //se as horas excedeu 40, entao dá 50% para todas as horas trabalhadas. Senao multiplica salario pela quantidade de horas.
-     
-     //   int n = list.nextInt();
-       // String nome = list.next();
+        //se as horas excederam 40, entao dá 50% para todas as horas trabalhadas. Senao multiplica salario pela quantidade de horas.
+
         
     }
     
